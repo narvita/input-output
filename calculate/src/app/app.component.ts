@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'calculate';
+  public value: number = 0;
+  constructor() {
+  }
+  ngOnInit() {
+
+  }
+
+
+  public incrementnumber(e: any) {
+    this.value += 1;
+  }
+  public decrementnumber(e:any) {
+    this.value -= 1;
+
+  }
 }
